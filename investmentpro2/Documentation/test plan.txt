@@ -1,0 +1,9 @@
+Test plan:
+
+The Arraylist like ArrayList<Invest> and HashMap are like HashMap<String, Investment>
+
+Major concern is about the key replace.
+
+All the Enter support both Capital_case and Low_case and begining letter
+
+giving the file, file name is data.txt, the program can not generate the file

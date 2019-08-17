@@ -1,0 +1,79 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package investmentpro2;
+
+/**
+ *
+ * @author markf
+ */
+public class Investment {
+
+    private String symbol;
+    private String name;
+    private int quantity;
+    private double price;
+    private double BookValue;
+    
+    public Investment(String symbol,String name, int quantity, double price)//stock construcor
+    {
+        this.symbol=symbol;
+        this.name=name;
+        this.quantity=quantity;
+        this.price=price;
+        
+    }
+    public void updatePrice(double price){
+        this.price=price;   
+    }
+    public void sell(int quantity){
+        this.quantity-=quantity;      
+    }
+    public void add(int quantity){
+        this.quantity+=quantity;
+        
+    }
+    public double getGain(){
+        return 1;
+    }
+    public String getSymbol() {
+        return symbol;
+    }
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public double getBookValue() {
+        return BookValue;
+    }
+    public void setBookValue(double BookValue) {
+        this.BookValue = BookValue;
+    }
+    public String toString() {
+        return  "symbol = "+"“"+symbol+"”"+"\n"+ 
+                "name = " +"“"+name+"”" +"\n"+ 
+                "quantity = "+"“"+quantity+"”"+"\n"+
+                "price = " +"“"+price +"”"+"\n"+
+                "BookValue = "+"“"+BookValue+"”"+"\n";
+    }
+       
+}
